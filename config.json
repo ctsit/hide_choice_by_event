@@ -2,7 +2,9 @@
     "name": "Hide Choice By Event",
     "namespace": "HideChoiceByEvent\\ExternalModule",
     "description": "Implements an action tag to hide a categorical field choice on a configured list of events",
-    "permissions": [],
+    "permissions": [
+        "hook_every_page_top"
+    ],
     "authors": [
         {
             "name": "Philip Chase",
