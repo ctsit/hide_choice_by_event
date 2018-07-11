@@ -66,6 +66,15 @@ class ExternalModule extends AbstractExternalModule {
         echo '<script src="' . $this->getUrl($path) . '"></script>';
     }
 
+    /**
+     * sets a value in the global variable created by init.js
+     *
+     * @param string $path
+     *   The relative path to the js file.
+     */
+    protected function setJsSetting($key, $value) {
+        echo '<script>hideChoiceByEvent.' . $key . ' = ' . json_encode($value) . ';</script>';
+    }
 }
 
 ?>
