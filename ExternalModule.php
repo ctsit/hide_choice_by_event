@@ -51,9 +51,15 @@ class ExternalModule extends AbstractExternalModule {
 
         }
 
-        //make settings available for js scipts.
-        echo '<script>var HideChoiceByEvent = ' . json_encode($settings) . '</script>';
+        $current_event = \Event::getEventNameById($_GET['pid'], $_GET['event_id']);
 
+        //make action tag configs available to js scripts
+        $this->includeJs('js/init.js');
+        $this->setJsSetting('settings', $settings);
+        $this->setJsSetting('current_event', $current_event);
+
+        //run script to hide field choices
+        $this->includeJs('js/hide_choice_by_event.js');
     }
 
     /**
