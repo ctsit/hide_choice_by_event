@@ -28,3 +28,7 @@ As an argument you will need to provide a JSON object that tells the tag which c
 Note that the whitespace in the above example is unnecessary. This example would hide option "1" on the "enrollment_1_arm_1" and "dose_1_arm_1" events. Similarly, it would also hide option "3" on the  "dose_1_arm_1" event. As can be seen "code" signifies which field option to hide. "event" indicates for which events this option should be hidden.
 
 To find a list of unique event names to use for the "event" field go to **Project Setup > Define My Events**. The right-most column will contain a list of unique event names.
+
+## Limitations
+
+Currently this module only supports radio buttons. It will not hide the choices for any other type of field.
