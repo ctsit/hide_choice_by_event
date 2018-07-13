@@ -44,9 +44,10 @@ class ExternalModule extends AbstractExternalModule {
             //quotes inside JSON.
             if (preg_match("/@HIDE-CHOICE-BY-EVENT\s*=\s*([\[].*[\]])/", $action_tags, $matches)) {
 
-                    //add to settings variable.
-                    $json_config = json_decode($matches[1], true);
-                    $settings[$field] = $json_config;
+                    //add to settings variable if it is a valid json
+                    if ($json_config = json_decode($matches[1], true)) {
+                        $settings[$field] = $json_config;
+                    }
             }
 
         }
