@@ -39,10 +39,12 @@ class ExternalModule extends AbstractExternalModule {
                 continue;
             }
 
+            $action_tags = preg_replace("/\s/", "", $action_tags);
+
             //check if @HIDE-CHOICE-BY-EVENT is among action tags.
             //did not use \Form::getValueInActionTag methods because of nested
             //quotes inside JSON.
-            if (preg_match("/@HIDE-CHOICE-BY-EVENT\s*=\s*([\[].*[\]])/", $action_tags, $matches)) {
+            if (preg_match("/@HIDE-CHOICE-BY-EVENT\s*=\s*(\[.*\])/", $action_tags, $matches)) {
 
                     //add to settings variable if it is a valid json
                     if ($json_config = json_decode($matches[1], true)) {
