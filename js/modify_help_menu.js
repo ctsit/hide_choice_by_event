@@ -13,7 +13,7 @@ $(document).ready(function() {
 
         // Aux function that checks if text matches the "@DEFAULT" string.
         var isDefaultLabelColumn = function() {
-            return $(this).text() === '@DEFAULT';
+            return $(this).text() === '@HIDECHOICE';
         }
 
         // Getting @DEFAULT row from action tags help table.
