@@ -52,6 +52,10 @@ class ExternalModule extends AbstractExternalModule {
 
         }
 
+        if (empty($settings)) {
+            return;
+        }
+
         $current_event = \Event::getEventNameById($_GET['pid'], $_GET['event_id']);
 
         //make action tag configs available to js scripts
