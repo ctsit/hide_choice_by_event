@@ -1,0 +1,28 @@
+{
+    "name": "Hide Choice By Event",
+    "namespace": "HideChoiceByEvent\\ExternalModule",
+    "description": "Implements an action tag to hide a categorical field choice on a configured list of events",
+    "permissions": [
+        "hook_every_page_top"
+    ],
+    "authors": [
+        {
+            "name": "Philip Chase",
+            "email": "pbc@ufl.edu",
+            "institution": "University of Florida - CTSI"
+        },
+        {
+            "name": "Taryn Stoffs",
+            "email": "tls@ufl.edu",
+            "institution": "University of Florida - CTSI"
+        },
+        {
+            "name": "Dileep Rajput",
+            "email": "rajputd@ufl.edu",
+            "institution": "University of Florida - CTSI"
+        }
+    ],
+    "compatibility": {
+        "redcap-version-min": "8.0.3"
+    }
+}
