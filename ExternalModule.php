@@ -35,11 +35,9 @@ class ExternalModule extends AbstractExternalModule {
             $field_info = $Proj->metadata[$field];
 
             //continue if the field does not have any action_tags at all.
-            if (!$action_tags = $field_info['misc']) {
+            if (!$action_tags = str_replace("\n", '', $field_info['misc'])) {
                 continue;
             }
-
-            $action_tags = preg_replace("/\s/", "", $action_tags);
 
             //check if @HIDE-CHOICE-BY-EVENT is among action tags.
             //did not use \Form::getValueInActionTag methods because of nested
