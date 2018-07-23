@@ -26,7 +26,10 @@ $(document).ready(function() {
         var $button = $cols.find('button');
 
         // Column 1: updating button behavior.
-        $button.attr('onclick', $button.attr('onclick').replace('@HIDECHOICE', tag_name));
+        if ($button.length !== 0) {
+            $button.attr('onclick', $button.attr('onclick').replace('@HIDECHOICE', tag_name));    
+        }
+        
 
         // Columns 2: updating action tag label.
         $cols.filter(isDefaultLabelColumn).text(tag_name);
