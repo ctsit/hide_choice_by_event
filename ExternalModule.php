@@ -15,9 +15,8 @@ class ExternalModule extends AbstractExternalModule {
      * @inheritdoc
      */
     function hook_every_page_top($project_id) {
-        if (PAGE == 'Design/online_designer.php' && $project_id) {
+        if ($project_id) {
             $this->includeJs('js/modify_help_menu.js');
-            return;
         }
 
         //if not on a data entry page or survey, then don't do anything

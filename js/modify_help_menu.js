@@ -1,9 +1,4 @@
 $(document).ready(function() {
-    // Checking if field annotation is present on this page.
-    if ($('#div_field_annotation').length === 0) {
-        return false;
-    }
-
     $('body').on('dialogopen', function(event, ui) {
         var $popup = $(event.target);
         if ($popup.prop('id') !== 'action_tag_explain_popup') {
@@ -11,12 +6,12 @@ $(document).ready(function() {
             return false;
         }
 
-        // Aux function that checks if text matches the "@DEFAULT" string.
+        // Aux function that checks if text matches the "@HIDECHOICE" string.
         var isDefaultLabelColumn = function() {
             return $(this).text() === '@HIDECHOICE';
         }
 
-        // Getting @DEFAULT row from action tags help table.
+        // Getting @HIDECHOICE row from action tags help table.
         var $default_action_tag = $popup.find('td').filter(isDefaultLabelColumn).parent();
         if ($default_action_tag.length !== 1) {
             return false;
@@ -31,7 +26,10 @@ $(document).ready(function() {
         var $button = $cols.find('button');
 
         // Column 1: updating button behavior.
-        $button.attr('onclick', $button.attr('onclick').replace('@HIDECHOICE', tag_name));
+        if ($button.length !== 0) {
+            $button.attr('onclick', $button.attr('onclick').replace('@HIDECHOICE', tag_name));    
+        }
+        
 
         // Columns 2: updating action tag label.
         $cols.filter(isDefaultLabelColumn).text(tag_name);
