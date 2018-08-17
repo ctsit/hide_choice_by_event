@@ -44,6 +44,7 @@ class ExternalModule extends AbstractExternalModule {
             if (preg_match('/@HIDE-CHOICE-BY-EVENT\s*=\s*(\[)/', $action_tags, $matches, PREG_OFFSET_CAPTURE)) {
                 $count = 1;
                 $json_start = $matches[1][1];
+                $json_len = 0;
                 $len = strlen($action_tags);
 
                 for ($i = $json_start + 1; $i < $len; $i++) {
@@ -56,7 +57,7 @@ class ExternalModule extends AbstractExternalModule {
                     }
                 }
 
-                if (!isset($json_len)) {
+                if (!$json_len) {
                     continue;
                 }
 
