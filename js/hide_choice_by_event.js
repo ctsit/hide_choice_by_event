@@ -10,8 +10,8 @@ $(document).ready(function() {
 
             //hide option if we are on the right event
             if(setting.event.indexOf(current_event) != -1) {
-                $('#label-' + field + '-' + setting.code).parent().hide();
-                $('[for="opt-'+ field + '_' + setting.code+'"]').parent().hide();
+                $('#label-' + field + '-' + setting.code).parent().hide(); //standard buttons
+                $('[for="opt-' + field + '_' + setting.code + '"]').parent().hide(); //enhanced buttons
             }
         }
     }
