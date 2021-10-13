@@ -11,7 +11,8 @@ $(document).ready(function() {
             //hide option if we are on the right event
             if(setting.event.indexOf(current_event) != -1) {
                 $('#label-' + field + '-' + setting.code).parent().hide(); //standard buttons
-                $('[for="opt-' + field + '_' + setting.code + '"]').parent().hide(); //enhanced buttons
+                $('[for="opt-' + field + '_' + setting.code + '"]').parent().hide(); //enhanced buttons variant 1
+                $('[for="id-__chk__' + field + '_RC_' + setting.code + '"]').parent().hide(); //enhanced buttons variant 2
             }
         }
     }
