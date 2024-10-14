@@ -34,6 +34,8 @@ Note that the whitespace in the above example is unnecessary. This example would
 
 To find a list of unique event names to use for the "event" field go to **Project Setup > Define My Events**. The right-most column will contain a list of unique event names.
 
+See [HideChoiceByEventTest.REDCap.xml](examples/HideChoiceByEventTest.REDCap.xml) for an example of _Hide Choice by Event_ in a longitudinal, 2-arm project.
+
 ## Limitations
 
 Currently this module only supports radio buttons. It will not hide the choices for any other type of field.
