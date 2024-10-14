@@ -2,7 +2,8 @@
 A REDCap module that implements an action tag to hide a categorical field choice on a specified list of events.
 
 ## Prerequisites
-- REDCap >= 8.0.3
+- REDCap >= 14.0.2
+- PHP >= 7.4
 
 ## Easy Installation
 - Obtain this module from the Consortium [REDCap Repo](https://redcap.vanderbilt.edu/consortium/modules/index.php) from the Control Center.
