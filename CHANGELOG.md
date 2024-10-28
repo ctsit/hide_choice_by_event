@@ -1,3 +1,6 @@
+# hide_choice_by_event 1.2.1 (released 2024-10-28)
+- Add DOI badge to README (@pbchase)
+
 # hide_choice_by_event 1.2.0 (released 2024-10-28)
 - Added support for enhanced radio buttons and checkboxes. (@remifrazierucsf, #6, #9)
 - Added CDISC ODM XML for a demo project. (@remifrazierucsf, #6, #9)
