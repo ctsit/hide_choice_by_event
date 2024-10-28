@@ -1,4 +1,7 @@
 # Hide Choice by Event
+
+[![DOI](https://zenodo.org/badge/139999906.svg)](https://doi.org/10.5281/zenodo.14004245)
+
 A REDCap module that implements an action tag to hide a categorical field choice on a specified list of events.
 
 ## Prerequisites
