@@ -38,4 +38,4 @@ See [HideChoiceByEventTest.REDCap.xml](examples/HideChoiceByEventTest.REDCap.xml
 
 ## Limitations
 
-Currently this module only supports radio buttons. It will not hide the choices for any other type of field.
+This module currently supports only radio buttons, checkboxes, and their enhanced versions. It will not hide choices for any other field types.
