@@ -18,7 +18,7 @@ Go to your project home page, click on Manage External Modules link, and then en
 Once the module is activated on a project, the `@HIDE-CHOICE-BY-EVENT` tag will be available in the action tag help text of the Online Designer. Add `@HIDE-CHOICE-BY-EVENT` to any categorical field where you would like to hide some of the choices based on the event.
 
 As an argument you will need to provide a JSON object that tells the tag which choice to hide on which event. It should look something like this:
-```
+```json
 @HIDE-CHOICE-BY-EVENT = [
     {
         "code":"1",

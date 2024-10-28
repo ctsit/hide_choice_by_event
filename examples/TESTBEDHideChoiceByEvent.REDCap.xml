@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ODM xmlns="http://www.cdisc.org/ns/odm/v1.3" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:redcap="https://projectredcap.org" xsi:schemaLocation="http://www.cdisc.org/ns/odm/v1.3 schema/odm/ODM1-3-1.xsd" ODMVersion="1.3.1" FileOID="000-00-0000" FileType="Snapshot" Description="(TESTBED) Hide Choice By Event" AsOfDateTime="2021-10-08T11:54:55" CreationDateTime="2021-10-08T11:54:55" SourceSystem="REDCap" SourceSystemVersion="10.6.28">
+<Study OID="Project.TESTBEDHideChoiceByEvent">
+<GlobalVariables>
+	<StudyName>(TESTBED) Hide Choice By Event</StudyName>
+	<StudyDescription>This file contains the metadata, events, and data for REDCap project "(TESTBED) Hide Choice By Event".</StudyDescription>
+	<ProtocolName>(TESTBED) Hide Choice By Event</ProtocolName>
+	<redcap:RecordAutonumberingEnabled>1</redcap:RecordAutonumberingEnabled>
+	<redcap:CustomRecordLabel></redcap:CustomRecordLabel>
+	<redcap:SecondaryUniqueField></redcap:SecondaryUniqueField>
+	<redcap:SchedulingEnabled>0</redcap:SchedulingEnabled>
+	<redcap:SurveysEnabled>1</redcap:SurveysEnabled>
+	<redcap:SurveyInvitationEmailField></redcap:SurveyInvitationEmailField>
+	<redcap:Purpose>0</redcap:Purpose>
+	<redcap:PurposeOther></redcap:PurposeOther>
+	<redcap:ProjectNotes>Requires activation of the REDCap Hide Choice By Event EM, available from the REDCap Repo or at:
+https://github.com/ctsit/hide_choice_by_event
+
+This project contains two forms, each with a radio button and checkbox question. These fields include six response codes: (1,..,6}
+
+One form is set to display standard buttons, the other is set to display enhanced buttons.
+
+Response codes {1} and {2} should be hidden in the Visit 2 and Visit 3 events (visit_2_arm_1 and visit_3_arm_1) in both forms.</redcap:ProjectNotes>
+	<redcap:SurveyQueueCustomText></redcap:SurveyQueueCustomText>
+	<redcap:DataMartProjectEnabled>0</redcap:DataMartProjectEnabled>
+	<redcap:DatamartAllowRepeatRevision>0</redcap:DatamartAllowRepeatRevision>
+	<redcap:DatamartAllowCreateRevision>0</redcap:DatamartAllowCreateRevision>
+	<redcap:DatamartCronEnabled>0</redcap:DatamartCronEnabled>
+	<redcap:MissingDataCodes></redcap:MissingDataCodes>
+	<redcap:SurveysGroup>
+		<redcap:Surveys form_name="standard_buttons" title="Standard Buttons" instructions="Please complete the survey below.
+Thank you!" acknowledgement="Thank you for taking the survey.
+Have a nice day!" question_by_section="0" display_page_number="0" question_auto_numbering="1" survey_enabled="1" save_and_return="0" save_and_return_code_bypass="0" logo="" hide_title="0" view_results="0" min_responses_view_results="10" check_diversity_view_results="0" end_survey_redirect_url="" survey_expiration="" promis_skip_question="0" survey_auth_enabled_single="0" edit_completed_response="0" hide_back_button="0" show_required_field_text="1" confirmation_email_subject="" confirmation_email_content="" confirmation_email_from="" confirmation_email_from_display="" confirmation_email_attach_pdf="0" confirmation_email_attachment="" text_to_speech="0" text_to_speech_language="en" end_survey_redirect_next_survey="0" theme="" text_size="1" font_family="16" theme_text_buttons="" theme_bg_page="" theme_text_title="" theme_bg_title="" theme_text_sectionheader="" theme_bg_sectionheader="" theme_text_question="" theme_bg_question="" enhanced_choices="0" repeat_survey_enabled="0" repeat_survey_btn_text="" repeat_survey_btn_location="AFTER_SUBMIT" response_limit="" response_limit_include_partials="1" response_limit_custom_text="Thank you for your interest; however, the survey is closed because the maximum number of responses has been reached." survey_time_limit_days="" survey_time_limit_hours="" survey_time_limit_minutes="" email_participant_field="" end_of_survey_pdf_download="0" pdf_save_to_field="" pdf_save_to_event_id="" pdf_auto_archive="0" pdf_econsent_version="" pdf_econsent_type="" pdf_econsent_firstname_field="" pdf_econsent_firstname_event_id="" pdf_econsent_lastname_field="" pdf_econsent_lastname_event_id="" pdf_econsent_dob_field="" pdf_econsent_dob_event_id="" pdf_econsent_allow_edit="0" pdf_econsent_signature_field1="" pdf_econsent_signature_field2="" pdf_econsent_signature_field3="" pdf_econsent_signature_field4="" pdf_econsent_signature_field5=""/>
+		<redcap:Surveys form_name="enhanced_buttons" title="Enhanced Buttons" instructions="Please complete the survey below.
+Thank you!" acknowledgement="Thank you for taking the survey.
+Have a nice day!" question_by_section="0" display_page_number="0" question_auto_numbering="1" survey_enabled="1" save_and_return="0" save_and_return_code_bypass="0" logo="" hide_title="0" view_results="0" min_responses_view_results="10" check_diversity_view_results="0" end_survey_redirect_url="" survey_expiration="" promis_skip_question="0" survey_auth_enabled_single="0" edit_completed_response="0" hide_back_button="0" show_required_field_text="1" confirmation_email_subject="" confirmation_email_content="" confirmation_email_from="" confirmation_email_from_display="" confirmation_email_attach_pdf="0" confirmation_email_attachment="" text_to_speech="0" text_to_speech_language="en" end_survey_redirect_next_survey="0" theme="" text_size="1" font_family="16" theme_text_buttons="" theme_bg_page="" theme_text_title="" theme_bg_title="" theme_text_sectionheader="" theme_bg_sectionheader="" theme_text_question="" theme_bg_question="" enhanced_choices="1" repeat_survey_enabled="0" repeat_survey_btn_text="" repeat_survey_btn_location="AFTER_SUBMIT" response_limit="" response_limit_include_partials="1" response_limit_custom_text="Thank you for your interest; however, the survey is closed because the maximum number of responses has been reached." survey_time_limit_days="" survey_time_limit_hours="" survey_time_limit_minutes="" email_participant_field="" end_of_survey_pdf_download="0" pdf_save_to_field="" pdf_save_to_event_id="" pdf_auto_archive="0" pdf_econsent_version="" pdf_econsent_type="" pdf_econsent_firstname_field="" pdf_econsent_firstname_event_id="" pdf_econsent_lastname_field="" pdf_econsent_lastname_event_id="" pdf_econsent_dob_field="" pdf_econsent_dob_event_id="" pdf_econsent_allow_edit="0" pdf_econsent_signature_field1="" pdf_econsent_signature_field2="" pdf_econsent_signature_field3="" pdf_econsent_signature_field4="" pdf_econsent_signature_field5=""/>
+	</redcap:SurveysGroup>
+	<redcap:UserRolesGroup>
+		<redcap:UserRoles role_name="-" lock_record="2" lock_record_multiform="1" lock_record_customize="1" data_export_tool="1" data_import_tool="1" data_comparison_tool="1" data_logging="1" file_repository="1" double_data="0" user_rights="1" data_access_groups="1" graphical="1" reports="1" design="1" calendar="1" data_entry="[demographics,1][contact_info,1][baseline_data,1][visit_lab_data,1][patient_morale_questionnaire,1][visit_blood_workup,1][visit_observed_behavior,1][completion_data,1][completion_project_questionnaire,1][test,1][m3,1][cfr11_advisory_subparts_b_and_c,1][cfr11_advisory_appendix_b,1][cfr11_advisory_appendix_c,1]" api_export="1" api_import="1" mobile_app="1" mobile_app_download_data="1" record_create="1" record_rename="1" record_delete="1" dts="0" participants="1" data_quality_design="1" data_quality_execute="1" data_quality_resolution="1" random_setup="0" random_dashboard="0" random_perform="0" realtime_webservice_mapping="0" realtime_webservice_adjudicate="0" external_module_config=""/>
+	</redcap:UserRolesGroup>
+</GlobalVariables>
+<MetaDataVersion OID="Metadata.TESTBEDHideChoiceByEvent_2021-10-08_1154" Name="(TESTBED) Hide Choice By Event" redcap:RecordIdField="study_id">
+	<Protocol>
+		<StudyEventRef StudyEventOID="Event.visit_1_arm_1" OrderNumber="1" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.visit_2_arm_1" OrderNumber="2" Mandatory="No"/>
+		<StudyEventRef StudyEventOID="Event.visit_3_arm_1" OrderNumber="3" Mandatory="No"/>
+	</Protocol>
+	<StudyEventDef OID="Event.visit_1_arm_1" Name="Visit 1" Type="Common" Repeating="No" redcap:EventName="Visit 1" redcap:CustomEventLabel="" redcap:UniqueEventName="visit_1_arm_1" redcap:ArmNum="1" redcap:ArmName="Drug A" redcap:DayOffset="2" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.standard_buttons" OrderNumber="1" Mandatory="No" redcap:FormName="standard_buttons"/>
+		<FormRef FormOID="Form.enhanced_buttons" OrderNumber="2" Mandatory="No" redcap:FormName="enhanced_buttons"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.visit_2_arm_1" Name="Visit 2" Type="Common" Repeating="No" redcap:EventName="Visit 2" redcap:CustomEventLabel="" redcap:UniqueEventName="visit_2_arm_1" redcap:ArmNum="1" redcap:ArmName="Drug A" redcap:DayOffset="3" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.standard_buttons" OrderNumber="1" Mandatory="No" redcap:FormName="standard_buttons"/>
+		<FormRef FormOID="Form.enhanced_buttons" OrderNumber="2" Mandatory="No" redcap:FormName="enhanced_buttons"/>
+	</StudyEventDef>
+	<StudyEventDef OID="Event.visit_3_arm_1" Name="Visit 3" Type="Common" Repeating="No" redcap:EventName="Visit 3" redcap:CustomEventLabel="" redcap:UniqueEventName="visit_3_arm_1" redcap:ArmNum="1" redcap:ArmName="Drug A" redcap:DayOffset="4" redcap:OffsetMin="0" redcap:OffsetMax="0">
+		<FormRef FormOID="Form.standard_buttons" OrderNumber="1" Mandatory="No" redcap:FormName="standard_buttons"/>
+		<FormRef FormOID="Form.enhanced_buttons" OrderNumber="2" Mandatory="No" redcap:FormName="enhanced_buttons"/>
+	</StudyEventDef>
+	<FormDef OID="Form.standard_buttons" Name="Standard Buttons" Repeating="No" redcap:FormName="standard_buttons">
+		<ItemGroupRef ItemGroupOID="standard_buttons.study_id" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="standard_buttons.standard_buttons_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="standard_buttons.standard_buttons_complete" Mandatory="No"/>
+	</FormDef>
+	<FormDef OID="Form.enhanced_buttons" Name="Enhanced Buttons" Repeating="No" redcap:FormName="enhanced_buttons">
+		<ItemGroupRef ItemGroupOID="enhanced_buttons.enhanced_buttons_timestamp" Mandatory="No"/>
+		<ItemGroupRef ItemGroupOID="enhanced_buttons.enhanced_buttons_complete" Mandatory="No"/>
+	</FormDef>
+	<ItemGroupDef OID="standard_buttons.study_id" Name="Standard Buttons" Repeating="No">
+		<ItemRef ItemOID="study_id" Mandatory="No" redcap:Variable="study_id"/>
+		<ItemRef ItemOID="redcap_survey_identifier" Mandatory="No" redcap:Variable="redcap_survey_identifier"/>
+		<ItemRef ItemOID="standard_buttons_timestamp" Mandatory="No" redcap:Variable="standard_buttons_timestamp"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="standard_buttons.standard_buttons_timestamp" Name="Standard Buttons" Repeating="No">
+		<ItemRef ItemOID="standard_buttons_timestamp" Mandatory="No" redcap:Variable="standard_buttons_timestamp"/>
+		<ItemRef ItemOID="radio_1" Mandatory="No" redcap:Variable="radio_1"/>
+		<ItemRef ItemOID="checkbox_1" Mandatory="No" redcap:Variable="checkbox_1"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="standard_buttons.standard_buttons_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="standard_buttons_complete" Mandatory="No" redcap:Variable="standard_buttons_complete"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="enhanced_buttons.enhanced_buttons_timestamp" Name="Enhanced Buttons" Repeating="No">
+		<ItemRef ItemOID="enhanced_buttons_timestamp" Mandatory="No" redcap:Variable="enhanced_buttons_timestamp"/>
+		<ItemRef ItemOID="radio_2" Mandatory="No" redcap:Variable="radio_2"/>
+		<ItemRef ItemOID="checkbox_2" Mandatory="No" redcap:Variable="checkbox_2"/>
+	</ItemGroupDef>
+	<ItemGroupDef OID="enhanced_buttons.enhanced_buttons_complete" Name="Form Status" Repeating="No">
+		<ItemRef ItemOID="enhanced_buttons_complete" Mandatory="No" redcap:Variable="enhanced_buttons_complete"/>
+	</ItemGroupDef>
+	<ItemDef OID="study_id" Name="study_id" DataType="text" Length="999" redcap:Variable="study_id" redcap:FieldType="text">
+		<Question><TranslatedText>Study ID</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="redcap_survey_identifier" Name="redcap_survey_identifier" DataType="text" Length="999" redcap:Variable="redcap_survey_identifier">
+		<Question><TranslatedText>Survey Identifier</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="standard_buttons_timestamp" Name="standard_buttons_timestamp" DataType="datetime" Length="999" redcap:Variable="standard_buttons_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="standard_buttons_timestamp" Name="standard_buttons_timestamp" DataType="datetime" Length="999" redcap:Variable="standard_buttons_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="radio_1" Name="radio_1" DataType="text" Length="1" redcap:Variable="radio_1" redcap:FieldType="radio" redcap:FieldAnnotation="@HIDE-CHOICE-BY-EVENT = [
+    {
+        &quot;code&quot;:&quot;1&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    },
+    {
+        &quot;code&quot;:&quot;2&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    }
+]">
+		<Question><TranslatedText>Radio Buttons</TranslatedText></Question>
+		<CodeListRef CodeListOID="radio_1.choices"/>
+	</ItemDef>
+	<ItemDef OID="checkbox_1" Name="checkbox_1" DataType="text" Length="1" redcap:Variable="checkbox_1" redcap:FieldType="radio" redcap:FieldAnnotation="@HIDE-CHOICE-BY-EVENT = [
+    {
+        &quot;code&quot;:&quot;1&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    },
+    {
+        &quot;code&quot;:&quot;2&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    }
+]">
+		<Question><TranslatedText>Checkbox buttons</TranslatedText></Question>
+		<CodeListRef CodeListOID="checkbox_1.choices"/>
+	</ItemDef>
+	<ItemDef OID="standard_buttons_complete" Name="standard_buttons_complete" DataType="text" Length="1" redcap:Variable="standard_buttons_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="standard_buttons_complete.choices"/>
+	</ItemDef>
+	<ItemDef OID="enhanced_buttons_timestamp" Name="enhanced_buttons_timestamp" DataType="datetime" Length="999" redcap:Variable="enhanced_buttons_timestamp">
+		<Question><TranslatedText>Survey Timestamp</TranslatedText></Question>
+	</ItemDef>
+	<ItemDef OID="radio_2" Name="radio_2" DataType="text" Length="1" redcap:Variable="radio_2" redcap:FieldType="radio" redcap:FieldAnnotation="@HIDE-CHOICE-BY-EVENT = [
+    {
+        &quot;code&quot;:&quot;1&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    },
+    {
+        &quot;code&quot;:&quot;2&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    }
+]">
+		<Question><TranslatedText>Radio Buttons</TranslatedText></Question>
+		<CodeListRef CodeListOID="radio_2.choices"/>
+	</ItemDef>
+	<ItemDef OID="checkbox_2" Name="checkbox_2" DataType="text" Length="1" redcap:Variable="checkbox_2" redcap:FieldType="radio" redcap:FieldAnnotation="@HIDE-CHOICE-BY-EVENT = [
+    {
+        &quot;code&quot;:&quot;1&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    },
+    {
+        &quot;code&quot;:&quot;2&quot;,
+        &quot;event&quot;: [&quot;visit_2_arm_1&quot;, &quot;visit_3_arm_1&quot;]
+    }
+]">
+		<Question><TranslatedText>Checkbox buttons</TranslatedText></Question>
+		<CodeListRef CodeListOID="checkbox_2.choices"/>
+	</ItemDef>
+	<ItemDef OID="enhanced_buttons_complete" Name="enhanced_buttons_complete" DataType="text" Length="1" redcap:Variable="enhanced_buttons_complete" redcap:FieldType="select" redcap:SectionHeader="Form Status">
+		<Question><TranslatedText>Complete?</TranslatedText></Question>
+		<CodeListRef CodeListOID="enhanced_buttons_complete.choices"/>
+	</ItemDef>
+	<CodeList OID="radio_1.choices" Name="radio_1" DataType="text" redcap:Variable="radio_1">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>1</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>2</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>4</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>5</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>6</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="checkbox_1.choices" Name="checkbox_1" DataType="text" redcap:Variable="checkbox_1">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>1</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>2</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>4</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>5</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>6</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="standard_buttons_complete.choices" Name="standard_buttons_complete" DataType="text" redcap:Variable="standard_buttons_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="radio_2.choices" Name="radio_2" DataType="text" redcap:Variable="radio_2">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>1</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>2</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>4</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>5</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>6</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="checkbox_2.choices" Name="checkbox_2" DataType="text" redcap:Variable="checkbox_2">
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>1</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>2</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="3"><Decode><TranslatedText>3</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="4"><Decode><TranslatedText>4</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="5"><Decode><TranslatedText>5</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="6"><Decode><TranslatedText>6</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+	<CodeList OID="enhanced_buttons_complete.choices" Name="enhanced_buttons_complete" DataType="text" redcap:Variable="enhanced_buttons_complete">
+		<CodeListItem CodedValue="0"><Decode><TranslatedText>Incomplete</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="1"><Decode><TranslatedText>Unverified</TranslatedText></Decode></CodeListItem>
+		<CodeListItem CodedValue="2"><Decode><TranslatedText>Complete</TranslatedText></Decode></CodeListItem>
+	</CodeList>
+</MetaDataVersion>
+</Study>
+<ClinicalData StudyOID="Project.TESTBEDHideChoiceByEvent" MetaDataVersionOID="Metadata.TESTBEDHideChoiceByEvent_2021-10-08_1154">
+	<SubjectData SubjectKey="1" redcap:RecordIdField="study_id">
+		<StudyEventData StudyEventOID="Event.visit_1_arm_1" StudyEventRepeatKey="1" redcap:UniqueEventName="visit_1_arm_1">
+			<FormData FormOID="Form.standard_buttons" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="standard_buttons.study_id" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="study_id" Value="1"/>
+					<ItemData ItemOID="radio_1" Value="1"/>
+					<ItemData ItemOID="checkbox_1" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="standard_buttons.standard_buttons_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="standard_buttons_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+			<FormData FormOID="Form.enhanced_buttons" FormRepeatKey="1">
+				<ItemGroupData ItemGroupOID="" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="radio_2" Value="1"/>
+					<ItemData ItemOID="checkbox_2" Value="1"/>
+				</ItemGroupData>
+				<ItemGroupData ItemGroupOID="enhanced_buttons.enhanced_buttons_complete" ItemGroupRepeatKey="1">
+					<ItemData ItemOID="enhanced_buttons_complete" Value="2"/>
+				</ItemGroupData>
+			</FormData>
+		</StudyEventData>
+	</SubjectData>
+</ClinicalData>
+</ODM>
